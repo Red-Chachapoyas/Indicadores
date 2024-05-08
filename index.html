@@ -14,6 +14,20 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>
+    /* Definir altura para la imagen */
+    .modal-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px; /* Altura del modal */
+    }
+    .modal-body img {
+      max-height: 100%; /* Altura máxima de la imagen */
+      width: auto; /* Para mantener la proporción de aspecto */
+      max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    }
+  </style>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
