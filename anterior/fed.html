@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>FED 2023 - 2024</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    </head>
+    <style>
+    /* Definir altura para la imagen */
+    .modal-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 430px; /* Altura del modal */
+    }
+    .modal-body img {
+      max-height: 100%; /* Altura máxima de la imagen */
+      width: auto; /* Para mantener la proporción de aspecto */
+      max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    }
+  </style>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="fed.html">Indicadores de Salud</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <b><li class="nav-item"><a class="nav-link active" aria-current="page" href="fed.html">FED  | </a></li></b>
+                        <li class="nav-item"><a class="nav-link" href="gestion.html">GESTIÓN  | </a></li>
+                         <li class="nav-item">
+                            <a class="btn btn-warning" href="https://app.powerbi.com/reportEmbed?reportId=b5b15664-ed72-4e61-8a8b-4861e321b652&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
+                                Seguimiento
+                                <i class="bi bi-arrow-up-right-circle-fill"></i>
+                            </a>
+                         </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"> | </a></li>
+                         <li class="nav-item">
+                            <a class="btn btn-danger" href="https://app.powerbi.com/reportEmbed?reportId=9949d8c9-b2f8-457a-813f-f65ce79187b6&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
+                                 Padrón
+                                <i class="bi bi-people-fill"></i>
+                            </a>
+                         </li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"> | </a></li>
+                         <li class="nav-item">
+                            <a class="btn btn-info" href="https://app.powerbi.com/reportEmbed?reportId=a784ab90-7e1e-45a3-b79a-4d51fa35436c&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
+                                 CNV
+                                <i class="bi bi-person-bounding-box"></i>
+                            </a>
+                         </li>
+
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"> | </a></li>
+                         <li class="nav-item">
+                            <a class="btn btn-dark" href="https://app.powerbi.com/reportEmbed?reportId=6267b6f8-ec45-4ad4-8c52-f7ede69f8bca&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
+                                 Errores
+                                <i class="bi bi-file-earmark-excel-fill"></i>
+                            </a>
+                         </li>
+                        
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                            </ul>
+                        </li>-->
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-telephone-fill"></i>
+                            931405480
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h5 style="font-size: 150%;" class="display-4 fw-bolder">FONDO DE ESTÍMULO AL DESEMPEÑO Y LOGRO DE RESULTADOS SOCIALES - FED</h5>
+                    <p class="lead fw-normal text-white-50 mb-0">Desarrollo Infantil Temprano (DIT)</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Red de Salud Chachapoyas</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h1 style="text-align: center;">Periodo Agosto 2023 - Junio 2024</h1><br>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-4 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/si_02_01.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">FED SI-02.01</h5>
+                                    <!-- Product price-->
+                                    Niños con bajo peso o prematuros que completan suplemento a los 06 meses.
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=e2944ab2-9ac1-441b-a7fe-7fc5d5e0cde2&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/si_02_02.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">FED SI-02.02</h5>
+                                    <!-- Product price-->
+                                    Niños de 209 días que reciben suplemento entre 110 a 130 días y TA de 06 meses..
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=c664e82e-dd43-425f-8f11-1ff517a6d2ea&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/si_03.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">FED SI-03</h5>
+                                    <!-- Product price-->
+                                    Niños de 394 días de edad que terminan tratamiento o suplemento con dos dosajes.
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=e96c8361-74ee-40e0-85c4-bc403a8570be&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/si_04.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">FED SI-04</h5>
+                                    <!-- Product price-->
+                                    Niños menores de 12 meses de edad, que cuentan con controles CRED.
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=f03f3856-cd20-4fde-a162-4dd7f551253e&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/mc_02.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">FED MC-02</h5>
+                                    <!-- Product price-->
+                                    Niños menores de un año de los distritos de quintil 1 y 2 que reciben paquete completo.
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=168ac7b0-c87c-4c1c-9bb5-81e36062bb83&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>
+                            <!--
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=378d062b-7ead-484d-9824-6deb73ecb3a6&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>-->
+                        </div>
+                    </div>
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/mc_03.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">FED MC-03</h5>
+                                    <!-- Product price-->
+                                    Niños de 29 días de edad que reciben paquete integrado de servicios del recién nacido.
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=4b5e4de6-2efe-4858-a26d-07da49f65bd9&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>
+                            <!-- 
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=6cb7f3d7-fffd-4b39-8971-274735f03fdf&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
+                            </div>-->
+                        </div>
+                    </div>
+                    
+                    <div class="col mb-5" >
+                        <div class="card h-100" style="background-color: #EAFAF1;">
+                            <!-- Product image-->
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">SEGUIMIENTO</h5>
+                                    <!-- Product price-->
+                                    Seguimiento de controles a niños según Padrón
+                                </div>
+                            </br>
+                                <div class="text-center"><a class="btn btn-outline-info mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=ab02e190-55f8-46f2-849e-11300dee086e&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">CRED
+                                    <i class="bi bi-ui-checks-grid"></i>
+                                </a></div>
+                                
+                                 </br>
+                                <div class="text-center"><a class="btn btn-outline-secondary mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=73e74e75-fcb8-4c5f-bc0a-afbf9fed2db7&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Vac.1año
+                                   <i class="bi bi-syringe"></i>
+                                    <i class="fa-solid fa-syringe"></i>
+                                </a></div>
+                                
+                                 </br>
+                                <div class="text-center"><a class="btn btn-warning mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=d78b60a9-4726-468e-ba4e-4ef9c3406ff8&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Avance
+                                   <i class="bi bi-bar-chart-fill"></i>
+                                </a></div>
+
+                                
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <!-- Modal  WHATSAPP-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><i class="bi bi-telephone-forward"></i>     931405480     <i class="bi bi-whatsapp"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Utilizar la clase img-fluid de Bootstrap para hacer la imagen sensible -->
+        <img src="img/whats2.png" class="img-fluid" alt="Imagen modal">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        <a class="btn btn-success" href="https://web.whatsapp.com/send?phone=51931405480" target="_blank">
+            Abrir WhatsApp
+            <i class="bi bi-whatsapp"></i>
+        </a>          
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Derechos de Autor &copy; Loja Zelada 2024</p></div>
+            
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- Bootstrap JS y jQuery (necesarios para el modal) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
