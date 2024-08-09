@@ -1,320 +1,435 @@
 <!DOCTYPE html>
+<!--
+ * A Design by GraphBerry
+ * Author: GraphBerry
+ * Author URL: http://graphberry.com
+ * License: http://graphberry.com/pages/license
+-->
 <html lang="en">
+    
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>FED 2023 - 2024</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Indicadores de Salud - DIT</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/pluton.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/pluton-ie7.css" />
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.cslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <!-- Fav and touch icons -->
+        <script src="https://kit.fontawesome.com/fd69a53668.js" crossorigin="anonymous"></script>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="images/ico/icono3.ico">
     </head>
-    <style>
-    /* Definir altura para la imagen */
-    .modal-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 430px; /* Altura del modal */
-    }
-    .modal-body img {
-      max-height: 100%; /* Altura máxima de la imagen */
-      width: auto; /* Para mantener la proporción de aspecto */
-      max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-    }
-  </style>
+    
     <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Indicadores de Salud</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <b><li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">FED  | </a></li></b>
-                        <li class="nav-item"><a class="nav-link" href="gestion.html">GESTIÓN  | </a></li>
-                         <li class="nav-item">
-                            <a class="btn btn-warning" href="https://app.powerbi.com/reportEmbed?reportId=b5b15664-ed72-4e61-8a8b-4861e321b652&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
-                                Seguimiento
-                                <i class="bi bi-arrow-up-right-circle-fill"></i>
-                            </a>
-                         </li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"> | </a></li>
-                         <li class="nav-item">
-                            <a class="btn btn-danger" href="https://app.powerbi.com/reportEmbed?reportId=9949d8c9-b2f8-457a-813f-f65ce79187b6&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
-                                 Padrón
-                                <i class="bi bi-people-fill"></i>
-                            </a>
-                         </li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"> | </a></li>
-                         <li class="nav-item">
-                            <a class="btn btn-info" href="https://app.powerbi.com/reportEmbed?reportId=a784ab90-7e1e-45a3-b79a-4d51fa35436c&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
-                                 CNV
-                                <i class="bi bi-person-bounding-box"></i>
-                            </a>
-                         </li>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="#" class="brand">
+                        <img src="images/logo.jpg" style="width: 150px !important; height: auto !important;" alt="Logo" />
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+                    <!-- Main navigation -->
+                    <div class="nav-collapse collapse pull-right">
+                        <ul class="nav" id="top-navigation">
+                            <li class="active"><a href="#Inicio">Inicio</a></li>
+                            <li><a href="#Seguimiento">Seguimiento</a></li>
+                            <li><a href="#Indicadores">Indicadores</a></li>
+                            <li><a href="#Avance">Avance</a></li>
+                            <li><a href="#2023">2023 - 2024</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <!-- End main navigation -->
+                </div>
+            </div>
+        </div>
+        <!-- Start Inicio section -->
+        <div id="Inicio">
+            <!-- Start cSlider -->
+            <div id="da-slider" class="da-slider">
+                <div class="triangle"></div>
+                <!-- mask elemet use for masking background image -->
+                <div class="mask"></div>
+                <!-- All slides centred in container element -->
+                <div class="container">
+                    <!-- Start first slide -->
+                    <div class="da-slide">
+                        <h2 class="fittext2">Desarrollo Infantil Temprano (DIT)</h2>
+                        <h4>RED DE SALUD CHACHAPOYAS</h4>
+                        <p style="color: black; font-family: serif;">Abarcamos el desarrollo físico, cognitivo, socioemocional y del lenguaje, con ello, buscamos las intervenciones oportunas para prevenir complicaciones futuras.</p>
+                        <a href="#" class="da-link button">Leer más</a>
+                        <div class="da-img">
+                            <img src="images/dit2.png" alt="image01" width="320">
+                        </div>
+                    </div>
+                    <!-- End first slide -->
+                    <!-- Start second slide -->
+                    <div class="da-slide">
+                        <h2>Convenios FED</h2>
+                        <h4>RED DE SALUD CHACHAPOYAS</h4>
+                        <p style="color: black; font-family: serif;">Buscamos incentivar el logro de metas específicas especialmente en áreas como salud infantil y nutrición. Mejorando la calidad y cobertura de los servicios de salud, con un enfoque especial en la población más vulnerable.</p>
+                        <div class="da-img">
+                            <img src="images/fed4.png" width="320" alt="image02">
+                        </div>
+                    </div>
+                    <!-- End second slide -->
+                    <!-- Start third slide -->
+                    <div class="da-slide">
+                        <h2>Convenios de Gestión</h2>
+                        <h4>Red de Salud Chachapoyas</h4>
+                        <p style="color: black; font-family: serif;">Queremos mejorar la calidad de atención, buscando elevar los estándares en los servicios de salud promoviendo las mejores prácticas en calidad de atención y administración. </p>
+                        <div class="da-img">
+                            <img src="images/gestion2.png" width="320" alt="image03">
+                        </div>
+                    </div>
+                    <!-- Start third slide -->
+                    <!-- Start cSlide navigation arrows -->
+                    <div class="da-arrows">
+                        <span class="da-arrows-prev"></span>
+                        <span class="da-arrows-next"></span>
+                    </div>
+                    <!-- End cSlide navigation arrows -->
+                </div>
+            </div>
+        </div>
+        <!-- End Inicio section -->
 
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!"> | </a></li>
-                         <li class="nav-item">
-                            <a class="btn btn-dark" href="https://app.powerbi.com/reportEmbed?reportId=6267b6f8-ec45-4ad4-8c52-f7ede69f8bca&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank">
-                                 Errores
-                                <i class="bi bi-file-earmark-excel-fill"></i>
+        <div id="Seguimiento">
+        <div class="section third-section">
+            <div class="container centered">
+                <div class="sub-section">
+                    <div class="title clearfix">
+                        <div class="pull-left">
+                            <h3>Seguimiento a Niños</h3>
+                        </div>
+                        <ul class="client-nav pull-right">
+                            <li id="client-prev"></li>
+                            <li id="client-next"></li>
+                        </ul>
+                    </div>
+                    <ul class="row client-slider" id="clint-slider">
+                        <li>
+                            <a class="btn btn-warning" href="https://app.powerbi.com/reportEmbed?reportId=b5b15664-ed72-4e61-8a8b-4861e321b652&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                Atenciones
+                                <i class="fa-solid fa-square-up-right"></i>
                             </a>
-                         </li>
-                        
-                        <!--<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                                <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                            </ul>
-                        </li>-->
+                        </li>
+                        <li>
+                            <a class="btn btn-info" href="https://app.powerbi.com/reportEmbed?reportId=ab02e190-55f8-46f2-849e-11300dee086e&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                CRED 1 año
+                                <i class="fa-solid fa-baby"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-success" href="https://app.powerbi.com/reportEmbed?reportId=ab02e190-55f8-46f2-849e-11300dee086e&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                CRED > 1 año
+                                <i class="fa-solid fa-list-check"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-secondary" href="https://app.powerbi.com/reportEmbed?reportId=73e74e75-fcb8-4c5f-bc0a-afbf9fed2db7&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                VAC. 1 año
+                                <i class="fa-solid fa-syringe"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-danger" href="https://app.powerbi.com/reportEmbed?reportId=9949d8c9-b2f8-457a-813f-f65ce79187b6&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                Padrón
+                                <i class="fa-solid fa-user-group"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="https://app.powerbi.com/reportEmbed?reportId=a784ab90-7e1e-45a3-b79a-4d51fa35436c&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                CNV                                
+                                <i class="fa-solid fa-address-card"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="https://app.powerbi.com/reportEmbed?reportId=6267b6f8-ec45-4ad4-8c52-f7ede69f8bca&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" target="_blank" style="padding: 15px 30px; font-size: 18px;">
+                                Errores                                
+                                <i class="fa-solid fa-file-excel"></i>
+                            </a>
+                        </li>
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-telephone-fill"></i>
-                            931405480
-                        </button>
-                    </form>
                 </div>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h5 style="font-size: 150%;" class="display-4 fw-bolder">FONDO DE ESTÍMULO AL DESEMPEÑO Y LOGRO DE RESULTADOS SOCIALES - FED</h5>
-                    <p class="lead fw-normal text-white-50 mb-0">Desarrollo Infantil Temprano (DIT)</p>
-                    <p class="lead fw-normal text-white-50 mb-0">Red de Salud Chachapoyas</p>
-                </div>
-            </div>
-        </header>
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h1 style="text-align: center;">Periodo Agosto 2023 - Junio 2024</h1><br>
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-4 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/si_02_01.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">FED SI-02.01</h5>
-                                    <!-- Product price-->
-                                    Niños con bajo peso o prematuros que completan suplemento a los 06 meses.
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=e2944ab2-9ac1-441b-a7fe-7fc5d5e0cde2&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/si_02_02.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">FED SI-02.02</h5>
-                                    <!-- Product price-->
-                                    Niños de 209 días que reciben suplemento entre 110 a 130 días y TA de 06 meses..
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=c664e82e-dd43-425f-8f11-1ff517a6d2ea&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/si_03.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">FED SI-03</h5>
-                                    <!-- Product price-->
-                                    Niños de 394 días de edad que terminan tratamiento o suplemento con dos dosajes.
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=e96c8361-74ee-40e0-85c4-bc403a8570be&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/si_04.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">FED SI-04</h5>
-                                    <!-- Product price-->
-                                    Niños menores de 12 meses de edad, que cuentan con controles CRED.
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=f03f3856-cd20-4fde-a162-4dd7f551253e&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/mc_02.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">FED MC-02</h5>
-                                    <!-- Product price-->
-                                    Niños menores de un año de los distritos de quintil 1 y 2 que reciben paquete completo.
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=168ac7b0-c87c-4c1c-9bb5-81e36062bb83&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>
-                            <!--
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=378d062b-7ead-484d-9824-6deb73ecb3a6&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>-->
-                        </div>
-                    </div>
-
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <div class="badge bg-success text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Cargado</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="img/mc_03.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">FED MC-03</h5>
-                                    <!-- Product price-->
-                                    Niños de 29 días de edad que reciben paquete integrado de servicios del recién nacido.
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=4b5e4de6-2efe-4858-a26d-07da49f65bd9&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>
-                            <!-- 
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=6cb7f3d7-fffd-4b39-8971-274735f03fdf&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Ver reporte</a></div>
-                            </div>-->
-                        </div>
-                    </div>
-                    
-                    <div class="col mb-5" >
-                        <div class="card h-100" style="background-color: #EAFAF1;">
-                            <!-- Product image-->
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">SEGUIMIENTO</h5>
-                                    <!-- Product price-->
-                                    Seguimiento de controles a niños según Padrón
-                                </div>
-                            </br>
-                                <div class="text-center"><a class="btn btn-outline-info mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=ab02e190-55f8-46f2-849e-11300dee086e&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">CRED
-                                    <i class="bi bi-ui-checks-grid"></i>
-                                </a></div>
-                                
-                                 </br>
-                                <div class="text-center"><a class="btn btn-outline-secondary mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=73e74e75-fcb8-4c5f-bc0a-afbf9fed2db7&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Vac.1año
-                                   <i class="bi bi-syringe"></i>
-                                    <i class="fa-solid fa-syringe"></i>
-                                </a></div>
-                                
-                                 </br>
-                                <div class="text-center"><a class="btn btn-warning mt-auto" target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=d78b60a9-4726-468e-ba4e-4ef9c3406ff8&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa">Avance
-                                   <i class="bi bi-bar-chart-fill"></i>
-                                </a></div>
-
-                                
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
-        <!-- Modal  WHATSAPP-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><i class="bi bi-telephone-forward"></i>     931405480     <i class="bi bi-whatsapp"></i></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Utilizar la clase img-fluid de Bootstrap para hacer la imagen sensible -->
-        <img src="img/whats2.png" class="img-fluid" alt="Imagen modal">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-        <a class="btn btn-success" href="https://web.whatsapp.com/send?phone=51931405480" target="_blank">
-            Abrir WhatsApp
-            <i class="bi bi-whatsapp"></i>
-        </a>          
-      </div>
+        </div>
     </div>
-  </div>
-</div>
+        <!-- Indicadores section start -->
+        <div class="section indicadores-section " id="Indicadores">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class=" title">
+                    <h2 style="color: black;">FONDO DE ESTÍMULO AL DESEMPEÑO Y LOGRO DE RESULTADOS SOCIALES</h2>
+                    <p style="color: black;">Indicadores de Salud del Convenio FED <i class="fa-solid fa-circle-arrow-down fa-bounce"></i></p>
+                </div>
+                <ul class="nav nav-pills">
+                    <li class="filter" data-filter="all">
+                        <a href="#T">FED 2024 - 2025</a>
+                    </li>
+                    <li class="filter" data-filter="web">
+                        <a href="#SI">FED SI</a>
+                    </li>
+                    <li class="filter" data-filter="photo">
+                        <a href="#MC">FED MC</a>
+                    </li>
+                </ul>
+                <!-- ESTO ESTÁ OCULTOOOOOOOOOOOOOOOOO -->
+                <div id="single-project">
+                    <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                        <div class="span6">
+                            <img src="images/Portfolio01.png" alt="project 1" />
+                        </div>
+                        <div class="span6">
+                            <div class="project-description">
+                                <div class="project-title clearfix">
+                                    <h3>Webste for Some Client</h3>
+                                    <span class="show_hide close">
+                                        <i class="icon-cancel"></i>
+                                    </span>
+                                </div>
+                                <div class="project-info">
+                                    <div>
+                                        <span>Client</span>Some Client Name</div>
+                                    <div>
+                                        <span>Date</span>July 2013</div>
+                                    <div>
+                                        <span>Skills</span>HTML5, CSS3, JavaScript</div>
+                                    <div>
+                                        <span>Link</span>http://examplecomp.com</div>
+                                </div>
+                                <p>Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End details for Indicadores project 1 -->
+                    
 
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Derechos de Autor &copy; Loja Zelada 2024</p></div>
-            
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+                    
+                    <ul id="portfolio-grid" class="thumbnails row">
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/fedsi01.jpg" alt="project 1">
+                                <a href="https://app.powerbi.com/reportEmbed?reportId=ef48039c-7da0-4a7c-8ee4-14d8082fcb5d&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="more" target="_blank">
+                                    <i class="fa-solid fa-eye fa-beat-fade"></i>
+                                </a>
+                                <h3>FED SI-02.01</h3>
+                                <p>Niños con bajo peso y/o prematuros que completan su suplemento a los 06 meses.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/fedsi02.jpg" alt="project 2">
+                                <a href="https://app.powerbi.com/reportEmbed?reportId=e7f11f5d-33f7-4db8-b02d-aebd5e5f5e97&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="more" target="_blank">
+                                    <i class="fa-solid fa-eye fa-beat-fade"></i>
+                                </a>
+                                <h3>FED SI-02.02</h3>
+                                <p>Niños de 04 meses de edad que culminan su esquema de suplemento a los 06 meses.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/fedsi03.jpg" alt="project 3">
+                                <a href="https://app.powerbi.com/reportEmbed?reportId=169212c7-f0aa-453f-856e-a75c3428bb9c&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="more" target="_blank">
+                                    <i class="fa-solid fa-eye fa-beat-fade"></i>
+                                </a>
+                                <h3>FED SI-03</h3>
+                                <p>Niños de 394 días de edad que terminan tratamiento o suplemento con dos dosajes.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix web">
+                            <div class="thumbnail">
+                                <img src="images/fedsi04.jpg" alt="project 4">
+                                <a href="https://app.powerbi.com/reportEmbed?reportId=6661e151-842a-4acf-b517-e4dff7ecffe0&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="more" target="_blank">
+                                    <i class="fa-solid fa-eye fa-beat-fade"></i>
+                                </a>
+                                <h3>FED SI-04</h3>
+                                <p>Niños menores de 12 meses de edad, que cuentan con controles CRED.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/fedmc02.jpg" alt="project 5">
+                                <a href="https://app.powerbi.com/reportEmbed?reportId=168ac7b0-c87c-4c1c-9bb5-81e36062bb83&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="more" target="_blank">
+                                    <i class="fa-solid fa-eye fa-beat-fade"></i>
+                                </a>
+                                <h3>FED MC-02</h3>
+                                <p>Niños menores de un año de los distritos de quintil 1 y 2 que reciben paquete completo.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                        <li class="span4 mix photo">
+                            <div class="thumbnail">
+                                <img src="images/fedmc032.jpg" alt="project 6">
+                                <a href="https://app.powerbi.com/reportEmbed?reportId=4b5e4de6-2efe-4858-a26d-07da49f65bd9&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="more" target="_blank">
+                                    <i class="fa-solid fa-eye fa-beat-fade"></i>
+                                </a>
+                                <h3>FED MC-03</h3>
+                                <p>Niños de 29 días de edad que reciben paquete integrado de servicios del recién nacido.</p>
+                                <div class="mask"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio section end -->
+        <!-- About us section start -->
+        <div class="section primary-section" id="Avance">
+            <div class="triangle"></div>
+            <div class="container">
+                <div class="title">
+                    <h1>Indicadores de Salud</h1>
+                    <p style="color: #f3d972;">Permiten monitorear, evaluar, y mejorar la implementación de las intervenciones de salud, asegurando que los recursos se utilicen de manera eficiente y que las metas de salud pública se alcancen.</p>
+                </div>
+                <div class="about-text centered">
+                    <h3 style="color: #f3d972;">Convenios</h3>
+                    <p>
+                        Tiene como función principal incentivar y apoyar a las entidades de salud para que alcancen metas clave relacionadas con la mejora de la salud infantil. 
+                        Estas metas están orientadas a reducir la mortalidad infantil, mejorar la nutrición, aumentar la cobertura de vacunación y garantizar el acceso a servicios 
+                        de salud de calidad para los niños, así mismo se busca mejorar y reducir las brechas de acceso a servicios de salud, 
+                        y contribuir a un desarrollo infantil sano y pleno, asegurando que todos los niños tengan un comienzo de vida saludable y equitativo.
+                    </p> 
+                    </div>
+                <h3 style="color: #f3d972;">Funciones:</h3>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <ul class="skills">
+                            <li>
+                                <span class="bar" data-width="80%"></span>
+                                <h3>Mejora de la Nutrición Infantil</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="85%"></span>
+                                <h3>Mejora en la Atención Neonatal y Postnatal</h3>
+                            </li>
+                            <li>
+                                <span class="bar" data-width="75%"></span>
+                                <h3>Fortalecimiento de la Atención Primaria de Salud para Niños</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="span6">
+                        <div class="highlighted-box center">
+                            <h1>Avance</h1>
+                            <p>Seguimiento y evaluación del avance de los indicadores de Salud del Convenio FED. Periodo 2024 - 2025</p>
+                            <a target="_blank" href="https://app.powerbi.com/reportEmbed?reportId=d78b60a9-4726-468e-ba4e-4ef9c3406ff8&autoAuth=true&ctid=97570966-515f-4269-acc1-d7dbfb58e5aa" class="button button-sp">ver avance <i class="fa-solid fa-chart-pie fa-beat-fade"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us section end -->
+        <div class="section pasado-section" id="2023">
+            <div class="triangle"></div>
+            <div class="container centered">
+                <p class="large-text">Indicadores de Salud... Periodo o evaluación del 2023 - 2024</p>
+                <a target="_blank" href="anterior/fed.html" class="button">ver <i style="margin-left: 10px;" class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+        </div>
+        <!-- Client section start -->
+        <!-- Client section start -->
+        
+        
+        <!-- Price section end -->
+        <!-- Contact section start -->
+        <div id="contact" class="contact">
+            <div class="section contactar-section">
+                <div class="triangle" style="border-top: 40px solid #EFEFBB;"></div>
+                <div class="container">
+                    <div class="title">
+                        <h1 style="color: white;">Contacto</h1>
+                        <p style="color: white;">En caso de inconvenientes o consultas, ubicanos o contactanos:</p>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe class="map-canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2456569431597!2d-77.86433964571606!3d-6.231311394785345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b6ab70c90ba349%3A0xf1f05f66b7897615!2sRed%20de%20Salud%20Chachapoyas!5e0!3m2!1ses!2spe!4v1723062519190!5m2!1ses!2spe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <div class="container">
+                    <div class="span9 center contact-info">
+                        <p>Jr. Triunfo 242, Chachapoyas, Perú</p>
+                        <p class="info-mail">reddesalud00@gmail.com</p>
+                        </br>
+                        <p><i class="fa-solid fa-phone" style="margin-right: 15px;"></i>  921 379 993</p>
+                        <p><i class="fa-solid fa-phone" style="margin-right: 10px;"></i> 931 405 480</p>
+                        <div class="title">
+                            <h3 style="color: #fcf3cf; margin-bottom: 10px;">WhatsApp:</h3>
+                            <hr style="border: 1px solid #fcf3cf; width: 80%; margin: 0 auto 20px;">
+                        </div>
+                    </div>
+                    <div class="row-fluid centered">
+                        <ul class="social">
+                            <li style="list-style-type: none;">
+                                <a target="_blank" href="https://web.whatsapp.com/send?phone=51931405480" style="
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 50px;
+                                    height: 50px;
+                                    background-color: white;
+                                    border-radius: 50%;
+                                    text-decoration: none;">
+                                    <i class="fa-brands fa-whatsapp fa-beat-fade" style="
+                                        color: #04865f;
+                                        font-size: 36px;">
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Bootstrap JS y jQuery (necesarios para el modal) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Contact section edn -->
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2024 Diseñado por <a target="_blank" href="https://www.facebook.com/franzjensen.lojazelada.14">Franz Jensen</a>, visita <a target="_blank" href="https://djekanej1z7nrmbre3s3dw.on.drv.tw/html/MiBlog/?fbclid=IwY2xjawEgvEpleHRuA2FlbQIxMAABHXu0VbquXON8rhnvrALkusSx-va1wSEO2bzMtwGmMFiXfVw1gDXfg2vb_Q_aem_rd2AuZSENEauMHXqwCY_9g">mi Blog</a></p>
+        </div>
+        <!-- Footer section end -->
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+        <script type="text/javascript" src="js/jquery.cslider.js"></script>
+        <script type="text/javascript" src="js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <!-- Load google maps api and call initializeMap function defined in app.js -->
+        <script async="" defer="" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap"></script>
+        <!-- css3-mediaqueries.js for IE8 or older -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
